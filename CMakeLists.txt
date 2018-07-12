@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.6)
 project(sxtwl_cpp)
 
+set(SXTWL_BUILD_EXAMPLES 1)
 IF(MSVC)
 ADD_DEFINITIONS(-D_CRT_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_WARNINGS)
 add_compile_options("$<$<C_COMPILER_ID:MSVC>:/utf-8>")
